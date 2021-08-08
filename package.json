@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.css"
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.css -w"
   },
   "author": "",
   "license": "ISC",

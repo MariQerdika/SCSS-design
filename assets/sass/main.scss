@@ -1,8 +1,9 @@
-/* Light green: #7ed56f;
-Medium green: #55c57a;
-Dark green: #28b485; */
-
-
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+$color-grey-dark: #777;
+$color-white: #fff;
+$color-black: #000;
 * {
     margin: 0;
     padding: 0;
@@ -11,14 +12,14 @@ html {
     font-size: 62.5%;
 }
 body {
-    color: #777;
+    color: $color-grey-dark;
     line-height: 1.7;
 }
-header {
+.header {
     height: 95vh;
     background-image: linear-gradient(
     to right,
-     rgba(126, 213, 111, 0.801), rgba(124, 158, 147, 0.815)), 
+     rgba($color-primary-light, 0.801), rgba($color-primary-dark, 0.815)), 
      url(../images/mainBG.jpg);
     background-size: cover;
     background-position: top;
@@ -28,48 +29,51 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    &__logo {
+        height: 6rem;
+    }
 }
 
-.header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-}
-.header__logo {
-    height: 6rem;
-}
+
 .heading-primary {
-    color: #fff;
+    color: $color-white;
     text-transform: uppercase;
     margin-bottom: 6rem;
-
     backface-visibility: hidden;
-}
-.heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
 
-    animation-name: moveInLeft;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
     
-
-    /* animation: moveInLeft 2s; */
-    /* animation-delay: 3s; */
-    /* animation-iteration-count: 5; */
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        
+    
+        /* animation: moveInLeft 2s; */
+        /* animation-delay: 3s; */
+        /* animation-iteration-count: 5; */
+    }
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 1.7rem;
+    
+        animation-name: moveInRight;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+    }
 }
-.heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 1.7rem;
 
-    animation-name: moveInRight;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-}
 
 
 @keyframes moveInLeft {
@@ -103,31 +107,40 @@ header {
     }
 }
 
-.btn:link,
-.btn:visited {
+
+.btn {
+    &:link,
+&:visited {
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem; 
     display: inline-block;
     border-radius: 8rem;
     transition:  all .2s;
-    position: relative;
-
-   
+    position: relative;   
 }
-.btn:hover {
+&:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+    &:after {
+        transform: scale(1.5);
+        opacity: 0;
+    }
 }
-.btn:active {
+&:active {
     transform: translateY(-1px);
-    box-shadow: 0 .5rem 2rem rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 2rem rgba($color-black,.2);
 }
-.btn-white {
-    background-color: #fff;
-    color: #777;
+&--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+
+    &:after {
+        background-color: $color-white;
+    }
 }
-.btn::after {
+&::after {
     content:"";
     display: inline-block;
     height: 100%;
@@ -139,16 +152,9 @@ header {
     z-index: -1;
     transition:  all .4s;
 }
-.btn--white:after {
-    background-color: #fff;
-}
-.btn:hover::after {
-    transform: scale(1.5);
-    opacity: 0;
-}
-
-.btn--animated {
+&--animated {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
     font-size: 1.4rem;
+}
 }
