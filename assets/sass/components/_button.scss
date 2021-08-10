@@ -33,9 +33,10 @@
 &--green {
     background-color: $color-primary;
     color: $color-white;
+    font-size: 1.6rem;
 
     &:after {
-        background-color: $color-white;
+        background-color: $color-primary;
     }
 }
 &::after {

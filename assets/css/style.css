@@ -94,7 +94,7 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
-.u-margin-bottom-huge {
+.u-margin-top-huge {
   margin-bottom: 10rem; }
 
 .btn:link, .btn:visited {
@@ -125,9 +125,10 @@ body {
 
 .btn--green {
   background-color: #55c57a;
-  color: #fff; }
+  color: #fff;
+  font-size: 1.6rem; }
   .btn--green:after {
-    background-color: #fff; }
+    background-color: #55c57a; }
 
 .btn::after {
   content: "";
