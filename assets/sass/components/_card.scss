@@ -2,13 +2,11 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 52rem;
 
     &__side {
-        
-        color: rgb(23, 151, 34);
         font-size: 2rem;
-        height: 50rem;
+        height: 52rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -16,6 +14,7 @@
         width: 100%;
         backface-visibility: hidden;
         border-radius: 3px;
+        overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
@@ -24,10 +23,16 @@
 
         &--back {
             background-color: orangered;
-            transform: rotateY(180deg);
+            transform: rotateY(-180deg);
 
             &-1 {
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            }
+            &-2 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
             }
         }
     }
@@ -39,5 +44,78 @@
     }
     &:hover &__side--back {
         transform: rotateY(0);
+    }
+
+    &__picture {
+        background-size: cover;
+        height: 24rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
+            url(../images/1.jpg);
+        }
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+            url(../images/2.jpg);
+        }
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+            url(../images/3.jpg);
+        }
+    }
+
+    &__heading {
+        font-size: 1.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        // box-decoration-break: clone;
+        // display: inline-block;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-tertiary-light, .9), 
+            rgba( $color-tertiary-dark, .9));
+        }
+        &--2 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-secondary-light, .9), 
+            rgba($color-secondary-dark, .9));
+        }
+        &--3 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-primary-light, .85), 
+            rgba($color-primary-dark, .85));
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid #eee;
+                }
+            }
+        }
     }
 }
