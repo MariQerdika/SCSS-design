@@ -218,8 +218,7 @@ body {
     top: 0;
     left: 0; }
   .card__heading-span {
-    padding: 1rem 1.5rem;
-    -webkit-box-decoration-break: clone; }
+    padding: 1rem 1.5rem; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.9), rgba(86, 67, 250, 0.9)); }
     .card__heading-span--2 {
@@ -359,5 +358,5 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 15rem 0;
+  padding: 25rem 0 12rem 0;
   margin-top: -11rem; }
