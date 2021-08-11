@@ -411,7 +411,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: url(../images/cover.jfif);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(255, 255, 255, 0.815)), url(../images/story-img3.jpg);
   background-size: cover;
   background-position: bottom;
   transform: skewY(-7deg);
