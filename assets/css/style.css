@@ -326,7 +326,7 @@ body {
     transform: skewX(12deg); }
 
 .row {
-  max-width: 144rem;
+  max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -389,5 +389,5 @@ body {
   margin-top: -11rem; }
 
 .section-stories {
-  padding: 15rem 0;
+  padding-bottom: 15rem;
   background-color: #f7f7f7; }
