@@ -97,6 +97,19 @@ body {
 .u-margin-top-huge {
   margin-bottom: 10rem; }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .8; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -412,5 +425,5 @@ body {
   margin-top: -11rem; }
 
 .section-stories {
-  padding-bottom: 15rem;
-  background-color: #f7f7f7; }
+  position: relative;
+  padding: 15rem 0; }
