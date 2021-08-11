@@ -5,12 +5,10 @@
 }
 .section-features {
     padding: 20rem 0;
-    background-image: linear-gradient(
-    to right,
-     rgba($color-primary-light, 0.801), rgba($color-primary-dark, 0.815)), 
-     url(../images/mainBG.jpg);
+    background-image: 
+     url(../images/cover.jfif);
      background-size: cover;
-
+    background-position: bottom;
      transform: skewY(-7deg);
      margin-top: -11rem;
 
