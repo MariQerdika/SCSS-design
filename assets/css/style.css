@@ -128,7 +128,7 @@ body {
     transform: scale(1.5);
     opacity: 0; }
 
-.btn:active {
+.btn:active, .btn:focus {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2); }
 
@@ -439,6 +439,16 @@ body {
   .story:hover .story__img {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px); }
+
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    height: 10rem; }
 
 .row {
   max-width: 114rem;
