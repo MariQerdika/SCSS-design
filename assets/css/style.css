@@ -66,6 +66,9 @@ body {
     animation-name: moveInRight;
     animation-duration: 2s;
     animation-timing-function: ease-in-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -77,6 +80,12 @@ body {
   color: transparent;
   transition: all .2s;
   letter-spacing: .2px; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
   .heading-secondary:hover {
     transform: skewY(3deg);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }

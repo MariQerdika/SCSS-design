@@ -28,6 +28,10 @@
         animation-name: moveInRight;
         animation-duration: 2s;
         animation-timing-function: ease-in-out;
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
     }
 }
 
@@ -41,6 +45,13 @@
     color: transparent;
     transition: all .2s;
     letter-spacing: .2px;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+    @include respond(phone) {
+       font-size: 2.5rem;
+    }
 
     &:hover {
         transform: skewY(3deg); 
