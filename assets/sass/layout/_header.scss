@@ -4,17 +4,20 @@
     to right,
      rgba($color-main-light, 0.801), rgba($color-main-dark, 0.815)), 
      url(../images/cover.jfif);
-    
-
     background-size: cover;
     background-position: bottom;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
     position: relative;
     display: flex;
     justify-content: center;
-
     align-items: center;
     flex-direction: column;
+
+    @include respond(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
 
     &__logo-box {
         position: absolute;
