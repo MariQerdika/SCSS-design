@@ -71,10 +71,27 @@
 
     height: 50rem;
 
+    @include respond(tab-land) {
+        background: linear-gradient(105deg, rgba($color-white, .7) 0%, rgba($color-white, .7) 65%, #ffffff00 65%), url(../images/cover.jfif);
+        background-position: bottom;
+    }
+
+    @include respond(tab-port) {
+        background: linear-gradient(to right, rgba($color-white, .7) 0%, rgba($color-white, .7) 0, #ffffff00 100%), url(../images/cover.jfif);
+        background-position: bottom;
+    }
+
     &__form {
         width: 50%;
         padding: 6rem;
         box-sizing: border-box;
+
+        @include respond(tab-land) {
+           width: 65%;
+        }
+        @include respond(tab-port) {
+            width: 100%;
+         }
     }
 
 

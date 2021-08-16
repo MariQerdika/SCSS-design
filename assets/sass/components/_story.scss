@@ -7,6 +7,16 @@
     font-size: $default-font-size;
     padding-left: 9rem;
     transform: skewX(-12deg);
+
+    @include respond(tab-port) {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+        box-sizing: border-box;
+    }
+    @include respond(tab-port) {
+        transform: skewX(0);
+    }
     
 
     & > * {
@@ -25,6 +35,10 @@
         position:relative;
         overflow: hidden;
 
+        @include respond(tab-port) {
+            transform: translateX(-3rem) skewX(0);
+        }
+
     }
 
     &__img{
@@ -35,6 +49,10 @@
     }
     &__text {
         transform: skewX(12deg);
+
+        @include respond(tab-port) {
+            transform: skewX(0);
+        }
     }
     &__caption {
         position: absolute;

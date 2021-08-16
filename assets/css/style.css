@@ -404,6 +404,10 @@ body {
   width: 90%;
   color: inherit;
   transition: all .5s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%;
+      margin: 0; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -415,6 +419,10 @@ body {
 
 .form__group {
   display: inline; }
+  @media (max-width: 56.25em) {
+    .form__group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form__label {
   font-size: 1.2rem;
@@ -540,6 +548,15 @@ body {
   font-size: 1.6rem;
   padding-left: 9rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem;
+      box-sizing: border-box; } }
+  @media (max-width: 56.25em) {
+    .story {
+      transform: skewX(0); } }
   .story > * {
     transform: skewX(12deg); }
   .story__shape {
@@ -553,6 +570,9 @@ body {
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
     overflow: hidden; }
+    @media (max-width: 56.25em) {
+      .story__shape {
+        transform: translateX(-3rem) skewX(0); } }
   .story__img {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
@@ -560,6 +580,9 @@ body {
     transition: all .5s; }
   .story__text {
     transform: skewX(12deg); }
+    @media (max-width: 56.25em) {
+      .story__text {
+        transform: skewX(0); } }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -866,7 +889,21 @@ body {
   background-position: bottom;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   height: 50rem; }
+  @media (max-width: 75em) {
+    .book {
+      background: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 65%, #ffffff00 65%), url(../images/cover.jfif);
+      background-position: bottom; } }
+  @media (max-width: 56.25em) {
+    .book {
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 0, #ffffff00 100%), url(../images/cover.jfif);
+      background-position: bottom; } }
   .book__form {
     width: 50%;
     padding: 6rem;
     box-sizing: border-box; }
+    @media (max-width: 75em) {
+      .book__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }
