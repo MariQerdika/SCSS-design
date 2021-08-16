@@ -39,7 +39,7 @@
     margin-top: -11rem;
 
     @include respond(tab-port) {
-        padding: 20rem 0 10rem 0;
+        padding: 20rem 0 0rem 0;
     }
 }
 
@@ -48,7 +48,7 @@
     padding: 15rem 0;
 
     @include respond(tab-port) {
-        padding: 10rem 0;
+        padding: 10rem 0 1rem 0;
     }
 }
 .section-book {

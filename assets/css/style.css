@@ -872,14 +872,14 @@ body {
   margin-top: -11rem; }
   @media (max-width: 56.25em) {
     .section-tours {
-      padding: 20rem 0 10rem 0; } }
+      padding: 20rem 0 0rem 0; } }
 
 .section-stories {
   position: relative;
   padding: 15rem 0; }
   @media (max-width: 56.25em) {
     .section-stories {
-      padding: 10rem 0; } }
+      padding: 10rem 0 1rem 0; } }
 
 .section-book {
   padding: 15rem 0;
