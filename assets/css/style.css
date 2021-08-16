@@ -382,7 +382,7 @@ body {
   transition: .3s; }
   @media (max-width: 56.25em) {
     .feature-box {
-      padding: 2px; } }
+      padding: 2rem; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
