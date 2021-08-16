@@ -425,10 +425,6 @@ body {
 
 .form__group {
   display: inline; }
-  @media (max-width: 56.25em) {
-    .form__group {
-      width: 100%;
-      margin-bottom: 2rem; } }
 
 .form__label {
   font-size: 1.2rem;
@@ -446,6 +442,10 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 1rem !important; } }
 
 .form__radio-input {
   display: none; }
