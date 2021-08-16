@@ -58,6 +58,9 @@ body {
     /* animation: moveInLeft 2s; */
     /* animation-delay: 3s; */
     /* animation-iteration-count: 5; */ }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -68,7 +71,7 @@ body {
     animation-timing-function: ease-in-out; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: .5rem; } }
+        letter-spacing: .9rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
