@@ -16,6 +16,8 @@
 
         @include respond(phone) {
             letter-spacing: 1rem;
+            font-size: 4rem;
+            text-align: center;
         }
         
     
@@ -35,6 +37,7 @@
 
         @include respond(phone) {
             letter-spacing: .9rem;
+            font-size: 1.4rem;
         }
     }
 }
