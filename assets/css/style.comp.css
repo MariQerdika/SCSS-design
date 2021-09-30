@@ -22,6 +22,12 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes logo {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-360deg); } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -622,7 +628,8 @@ body {
       .footer__logo-box {
         margin-bottom: 6rem; } }
   .footer__logo {
-    height: 10rem; }
+    height: 10rem;
+    animation: logo 5s infinite linear; }
   .footer__navigation {
     border-top: 1px solid #777;
     padding-top: 2rem;
@@ -643,7 +650,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
-    transition: all .2s; }
+    transition: all 0.2s; }
   .footer__link:hover, .footer__link:active {
     color: #55c57a;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
@@ -719,7 +726,8 @@ body {
     top: 4rem;
     left: 4rem; }
   .header__logo {
-    height: 6rem; }
+    height: 6rem;
+    animation: logo 5s infinite linear; }
 
 .navigation__checkbox {
   display: none; }
